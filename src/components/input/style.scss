@@ -1,0 +1,13 @@
+.visual-input {
+    padding: 4px;
+    border: 1px solid red;
+
+    &_inner {
+        font-size: 16px;
+        border: unset;
+
+        &:focus-visible {
+            outline: unset;
+        }
+    }
+}

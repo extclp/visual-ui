@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import ViButton from "@/components/button"
+import ViInput from "@/components/input"
+import "@/components/style.scss"
+import { Search } from "@element-plus/icons-vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <ViButton loading>你好世界</ViButton>
+  <ViInput :suffix="Search"/>
 </template>
 
 <style scoped>

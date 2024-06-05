@@ -1,0 +1,26 @@
+.visual-button {
+    border: unset;
+    padding: 4px;
+    font-size: 16px;
+    line-height: 1;
+
+    &_content {
+        margin: 0 4px;
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &--mini {
+        font-size: 12px;
+    }
+
+    &--small {
+        font-size: 14px;
+    }
+ 
+    &--lare {
+        font-size: 18px;
+    }
+}
