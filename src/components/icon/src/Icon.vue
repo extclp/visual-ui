@@ -1,29 +1,29 @@
 <template>
-    <span class="visult-icon" :style="{ color: $props.color, fontSize: size }">
-        <slot />
-    </span>
+  <span class="visult-icon" :style="{ color: $props.color, fontSize: size }">
+    <slot />
+  </span>
 </template>
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from "vue";
 
 defineOptions({
-    name: "VisualIcon"
-})
+  name: "VisualIcon",
+});
 
 const props = defineProps({
-    color: String,
-    size: [Number, String]
-})
+  color: String,
+  size: [Number, String],
+});
 
 const size = computed(() => {
-    if (!props.size) {
-        return
-    }
+  if (!props.size) {
+    return;
+  }
 
-    try {
-        return `${Number(props.size)}px`
-    } catch (e) {
-        return props.size
-    }
-})
+  try {
+    return `${Number(props.size)}px`;
+  } catch (e) {
+    return props.size;
+  }
+});
 </script>
